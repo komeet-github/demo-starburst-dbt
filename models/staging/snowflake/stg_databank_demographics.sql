@@ -7,14 +7,13 @@ with source as (
 renamed as (
 
     select
-    
-        iso3166_1,
-        iso3166_2,
-        fips,
+        cast(iso3166_1 as VARCHAR) as iso3166_1,
+        cast(iso3166_2 as VARCHAR) as iso3166_2,
+        cast(fips as VARCHAR) as fips,
         latitude,
         longitude,
-        state,
-        county,
+        cast(state as VARCHAR) as state,
+        cast(county as VARCHAR) as county,
         total_population,
         total_male_population,
         total_female_population,
