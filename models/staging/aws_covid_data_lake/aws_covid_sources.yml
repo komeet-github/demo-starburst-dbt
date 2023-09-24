@@ -4,8 +4,8 @@ sources:
   - name: aws
     description: Sample covid data
     loader: sample
-    catalog: dbt_aws_src
-    schema: aws_covid_data_lake
+    catalog: aws_covid
+    schema: query_federation
     tables:
       - name: enigma_jhu
         columns:

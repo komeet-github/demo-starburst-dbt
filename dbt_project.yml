@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_galaxy_covid_demo'
+name: 'demo_startburst_dbt'
 version: '1.0.0'
 config-version: 2
 
@@ -24,7 +24,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # configure all the models in my project
 models:
-  dbt_galaxy_covid_demo:
+  demo_startburst_dbt:
     +materialized: table
     +on_table_exists: drop
 
