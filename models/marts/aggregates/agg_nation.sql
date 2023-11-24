@@ -36,7 +36,7 @@ select
     nation,
     SUM(CAST(confirmed as int)) AS total_confirmed_cases,
     SUM(total_population) as total_region_population,
-    SUM(vaccinated_population) as vaccinated_population
+    MAX(vaccinated_population) as vaccinated_population
 from
     final
 WHERE
