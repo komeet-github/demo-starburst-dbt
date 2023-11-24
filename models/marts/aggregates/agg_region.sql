@@ -34,6 +34,7 @@ final as (
 )
 
 select
+    'COVID KPIs' as covid, 
     region,
     SUM(CAST(confirmed as int)) AS total_confirmed_cases,
     MAX(total_population) as total_region_population,
